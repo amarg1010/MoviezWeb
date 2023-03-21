@@ -1,0 +1,52 @@
+.genrelist {
+    flex: 1;
+    min-width: 150px;
+    position: sticky;
+    top: 75px;
+    left: 0px;
+    height: calc(100vh - 75px);
+    overflow: scroll;
+  
+}
+
+.genrelist::-webkit-scrollbar {
+    display: none;
+
+}
+
+.genrelist > .genreitem{
+    padding: 10px 20px;
+}
+.genrelist > .activegenre{
+    background-color: #5CDB95;
+    color: #fff;
+}
+.genrelist > .normalgenre:hover {
+    background-color: #97e4b4;
+
+}
+
+@media only screen and (max-width: 480px) {
+    .genrelist {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        position: initial;
+    }
+    
+    .genrelist > .genreitem{
+        border: 1px solid #5CDB95;
+        padding: 5px 10px;
+        margin: 5px 0.5vw;
+    }
+    .genrelist > .activegenre{
+        background-color: #5CDB95;
+        color: #fff;
+    }
+    .genrelist > .normalgenre:hover {
+        background-color: #97e4b4;
+    }
+}

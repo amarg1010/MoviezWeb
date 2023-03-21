@@ -1,0 +1,33 @@
+
+.wlContainer{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wlContainer > .wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    
+    
+}
+.wlContainer > .wrapper button{
+    padding: 5px 15px;
+    border: 1px solid #06b1e6;
+    color: #06b1e6;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.wlContainer > .wrapper button:hover{
+    color: #fff;
+    background-color: #06b1e6;
+}
+
+h1{
+    background-color: red;
+}

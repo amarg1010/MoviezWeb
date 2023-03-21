@@ -1,0 +1,28 @@
+.panel{
+    height: 300px;
+    overflow: hidden;
+    padding: 15px 0px;
+    /* border-bottom: 1px solid lightgray; */
+    position: relative;
+    
+}
+
+.panel > .container{
+    height: 100%;
+    display: flex;
+    animation: App-logo-spin infinite 40s linear;
+    position: absolute;
+}
+
+@keyframes App-logo-spin {
+    5%{
+        transform: translate3d(0, 0, 0);
+      }
+    50%{
+        transform: translate3d(-2700px, 0, 0);
+      }
+    100%{
+        transform: translate3d(0, 0, 0);
+      }
+  }
+  

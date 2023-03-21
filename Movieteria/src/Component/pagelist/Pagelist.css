@@ -1,0 +1,28 @@
+.pagelist{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    /* border-top: 1px solid lightgray; */
+
+}
+.pagelist > .activePage {
+    background-color: #06b1e6;
+    color: #fff;
+    transform: scale(1.1);
+}
+.pagelist > div {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #06b1e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #86dbf5;
+}
+.pagelist > div:hover {
+    background-color: #06b1e6;
+    color: #fff;
+}

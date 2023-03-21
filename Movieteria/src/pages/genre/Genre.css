@@ -1,0 +1,15 @@
+.genre {
+    display: flex;
+}
+.subGenre {
+    flex: 6;
+}
+
+@media only screen and (max-width: 480px) {
+    .genre {
+        flex-direction: column;
+    }
+    .genre > .subGenre {
+        width: 100%;
+    }
+}

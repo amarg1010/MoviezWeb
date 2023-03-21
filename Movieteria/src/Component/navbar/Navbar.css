@@ -1,0 +1,114 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    min-height: 50px;
+    border-bottom: 1px solid lightgray;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    color: #000;
+    z-index: 999;
+    gap: 30px;
+    /* position: relative; */
+
+}
+.navbar > .left {
+    flex:1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 900;
+    font-size: 40px;
+    color: #333;
+    gap: 20px;
+    /* color: #06b1e6; */
+    /* color: #ccc;
+	font-size: 40px;
+	-webkit-text-stroke: 2px black; */
+}
+.left > .menu {
+    display: none;
+}
+.left > .nbCounter{
+    position: relative;
+}
+.left > .nbCounter > span{
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 10px;
+    right: -3px;
+}
+
+.navbar > .center {
+    flex:1;
+    min-width: 100px;
+    
+}
+.center .search{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    overflow: hidden;
+    
+}
+ .search > input{
+    border: none;
+    width: 400px;
+    background-color: transparent;
+    color: #000;
+    outline: none;
+    
+}
+.navbar > .right {
+    flex:1;
+    /* background-color: red; */
+}
+.navbar > .right > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    gap: 20px;
+}
+.right >ul li{
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 1px solid #06b1e6;
+    color: #06b1e6;
+    border-radius: 5px;
+}
+.right >ul li:hover{
+    color: #fff;
+    background-color: #7addfb;
+}
+.right .active > li{
+    color: #fff;
+    background-color: #06b1e6;
+}
+.right .active > li:hover {
+    color: #fff;
+    background-color: #06b1e6;
+
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar {
+        flex-wrap: wrap;
+        /* height: 200px; */
+    }
+    .left > .menu {
+        display: block;
+    }
+    .navbar > .center {
+        max-width: 90vh;
+        
+    }
+  }
+
